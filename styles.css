@@ -85,6 +85,9 @@ main {
   justify-content: space-between;
   width: 100%;
 }
+form {
+  width: 100%;
+}
 #ratings input {
   opacity: 0;
   position: fixed;
@@ -113,6 +116,7 @@ main {
 }
 
 #rating-state button {
+  margin-top: 20px;
   width: 100%;
   background: var(--color-orange);
   color: var(--color-grey950);

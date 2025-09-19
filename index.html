@@ -18,7 +18,7 @@
   <body>
     <main>
       <!-- Rating state start -->
-      <section id="rating-state">
+      <section class="show-state" id="rating-state">
         <img src="/images/icon-star.svg" alt=" " />
         <h1>How did we do?</h1>
         <p>
@@ -43,8 +43,11 @@
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <section id="thank-you-state">
-        <p>You selected <span></span> out of 5</p>
+      <section class="hidden-state" id="thank-you-state">
+        <img src="./images/illustration-thank-you.svg" alt=" " />
+        <p id="result">
+          You selected <span id="chosen-rating">4</span> out of 5
+        </p>
         <h2>Thank you!</h2>
         <p>
           We appreciate you taking the time to give a rating. If you ever need

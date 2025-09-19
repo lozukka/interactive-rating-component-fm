@@ -51,14 +51,21 @@ main {
   padding: 20px;
   border-radius: 12px;
 }
-/*----rating-state----*/
-#rating-state {
+.hidden-state {
+  display: none;
+}
+.show-state {
   display: flex;
+}
+
+#rating-state,
+#thank-you-state {
   flex-direction: column;
   gap: 20px;
   justify-content: center;
   align-items: start;
 }
+/*----rating-state----*/
 #rating-state img {
   padding: 13px;
   background: var(--color-grey900);
@@ -120,8 +127,30 @@ main {
 }
 /*----thank-you-state----*/
 #thank-you-state {
-  display: none;
+  align-items: center;
+  padding: 15px;
 }
+#result {
+  background: var(--color-grey900);
+  color: var(--color-orange);
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+#result span {
+  color: var(--color-orange);
+}
+#thank-you-state h2 {
+  color: var(--color-white);
+  margin-block: 0;
+  font-size: 2rem;
+  font-weight: 400;
+  padding-top: 5px;
+}
+#thank-you-state p {
+  text-align: center;
+  line-height: 1.5;
+}
+/*----footer----*/
 footer {
   width: 55%;
   padding-top: 30px;

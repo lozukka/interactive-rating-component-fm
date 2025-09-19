@@ -50,6 +50,7 @@ main {
   width: 90%;
   padding: 20px;
   border-radius: 12px;
+  max-width: 380px;
 }
 .hidden-state {
   display: none;

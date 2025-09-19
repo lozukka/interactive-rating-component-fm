@@ -1,12 +1,23 @@
 let form = document.querySelector("form");
 let test = document.getElementById("test");
+let ratingDisplay = document.getElementById("chosen-rating");
+let ratingState = document.getElementById("rating-state");
+let thankYouState = document.getElementById("thank-you-state");
 
 form.addEventListener("submit", (event) => {
   const data = new FormData(form);
-  let output = "";
+
   for (const entry of data) {
-    output = `${output}${entry[0]}=${entry[1]}\r`;
+    ratingDisplay.textContent = `${entry[1]}`;
   }
-  test.textContent = output;
+
   event.preventDefault();
+  changeState();
 });
+
+function changeState() {
+  ratingState.classList.remove("show-state");
+  ratingState.classList.add("hidden-state");
+  thankYouState.classList.remove("hidden-state");
+  thankYouState.classList.add("show-state");
+}
